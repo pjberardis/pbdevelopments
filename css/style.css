@@ -417,3 +417,38 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
+.banner-link {
+    display: block;
+    background: white;
+}
+
+.site-banner {
+    display: block;
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    object-position: center;
+    background: white;
+    padding: 14px 20px;
+}
+
+.nav-centered {
+    justify-content: center;
+    background: var(--dark-blue);
+    max-width: none;
+    padding: 14px 20px;
+}
+
+.nav-centered .nav-links {
+    justify-content: center;
+}
+
+.nav-centered .nav-links a {
+    color: white;
+    font-weight: 800;
+}
+
+.nav-centered .nav-links a:hover {
+    color: #8fc7f5;
+}
