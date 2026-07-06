@@ -28,21 +28,6 @@ a {
 
 .site-header {
     width: 100%;
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 18px rgba(0,0,0,.10);
-}
-
-.banner-link {
-    display: block;
-    width: 100%;
-    background: white;
-}
-
-.site-header {
-    width: 100%;
     background: #ffffff;
     position: sticky;
     top: 0;
@@ -53,15 +38,14 @@ a {
 .banner-link {
     display: block;
     width: 100%;
+    overflow: hidden;
     background: #ffffff;
 }
 
 .site-banner {
     display: block;
     width: 100%;
-    height: 230px;
-    object-fit: cover;
-    object-position: center 45%;
+    height: auto;
 }
 
 .nav-bar {
@@ -70,14 +54,15 @@ a {
     justify-content: center;
     align-items: center;
     gap: 58px;
-    padding: 17px 20px;
+    padding: 18px 20px;
 }
 
 .nav-bar a {
-    color: #ffffff;
+    color: white;
+    text-decoration: none;
     font-size: 18px;
     font-weight: 800;
-    text-decoration: none;
+    transition: color .25s ease;
 }
 
 .nav-bar a:hover {
@@ -85,10 +70,6 @@ a {
 }
 
 @media (max-width: 700px) {
-    .site-banner {
-        height: 135px;
-    }
-
     .nav-bar {
         gap: 18px;
         padding: 14px 10px;
