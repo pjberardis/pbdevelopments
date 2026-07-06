@@ -29,11 +29,11 @@ a {
 .site-header {
     width: 100%;
     background: #ffffff;
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 1000;
     box-shadow: 0 4px 18px rgba(0,0,0,.10);
 }
+
 
 .banner-link {
     display: block;
@@ -55,6 +55,10 @@ a {
     align-items: center;
     gap: 58px;
     padding: 18px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1001;
 }
 
 .nav-bar a {
