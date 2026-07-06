@@ -27,48 +27,54 @@ a {
 }
 
 .site-header {
-    background: white;
-    border-bottom: 0;
+    width: 100%;
+    background: #ffffff;
     position: sticky;
     top: 0;
-    z-index: 10;
-    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 0 3px 18px rgba(0,0,0,.08);
 }
 
-.nav {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 18px 22px;
+.banner-link {
+    display: block;
+    width: 100%;
+    background: #ffffff;
+}
+
+.site-banner {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav-centered {
+    max-width: none;
+    background: #081B43;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.brand {
-    font-size: 22px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    color: var(--navy);
-}
-
-.brand span {
-    color: var(--blue);
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 8px 22px rgba(8,27,67,.25);
 }
 
 .nav-links {
     display: flex;
-    gap: 22px;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+    padding: 18px 24px;
 }
 
 .nav-links a {
-    color: var(--navy);
-    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .nav-links a:hover {
-    color: var(--blue);
+    color: #58AFFF;
 }
 
 .page-wrap {
